@@ -5,6 +5,7 @@
   --light-gray: #e6e6e6;
   --green-color: #1eb406;
   --red-color: #ff0014;
+  --footer-color: #f4f7f6;
 }
 
 /* utilities */
@@ -105,39 +106,7 @@ li {
   width: 100%;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 100px;
-  width: calc(100% - 100px);
-  background: #fff;
-  z-index: 100;
-  box-shadow: 0px 8px 16px 0px rgba(0, 115, 229, 0.2);
-  padding: 0 4rem;
-  max-height: 100px;
-}
-
-aside {
-  position: fixed;
-  width: 100px;
-  height: 100vh;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3rem 2rem;
-  background: var(--primary-color);
-  color: #fff;
-  overflow: hidden;
-}
-
-main {
-  position: absolute;
-  top: 100px;
-  width: calc(100% - 100px);
-  padding: 2rem 4.5rem;
-  left: 100px;
-}
+/* toggle classes */
 
 .nav-open {
   left: 350px;
@@ -162,6 +131,17 @@ main {
 }
 
 /* NavBar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  width: calc(100% - 100px);
+  background: #fff;
+  z-index: 100;
+  box-shadow: 0px 8px 16px 0px rgba(0, 115, 229, 0.2);
+  padding: 0 4rem;
+  max-height: 100px;
+}
 
 nav .nav-wrapper {
   display: flex;
@@ -247,6 +227,19 @@ nav .nav-menu i.iconspan {
 }
 
 /* Side Bar */
+aside {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background: var(--primary-color);
+  color: #fff;
+  overflow: hidden;
+}
 
 aside img {
   width: 23px;
@@ -282,6 +275,15 @@ aside .settings span.menu-list {
 
 /* Main */
 
+main {
+  position: absolute;
+  top: 100px;
+  width: calc(100% - 100px);
+  height: 100%;
+  /* padding: 2rem 4.5rem; */
+  left: 100px;
+}
+
 main .top-page .left-top img {
   width: 30px;
   margin-right: 0.5rem;
@@ -290,6 +292,7 @@ main .top-page .left-top img {
 main .top-page {
   display: flex;
   justify-content: space-between;
+  padding: 2rem 4.5rem;
 }
 
 main .top-page .right-top {
@@ -361,6 +364,7 @@ main .top-page i.close:hover {
 
 main .middle-page {
   margin: 10rem 0;
+  padding: 0 4.5rem;
   width: 100%;
 }
 
@@ -392,3 +396,82 @@ main .middle-page .top .right .btn-gray {
 }
 
 /* Table */
+
+main .bottom table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+main .bottom td {
+  text-align: left;
+  padding: 2rem 1rem;
+}
+
+main .bottom table th {
+  text-align: left;
+  padding: 1.5rem 1rem;
+  font-family: arial, sans-serif;
+  background: var(--light-gray);
+}
+
+main .bottom thead {
+  margin-bottom: 1rem;
+}
+
+main .bottom tbody {
+  margin: 1rem 0;
+  background: #fff;
+}
+
+main .bottom tbody tr:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 115, 229, 0.2);
+}
+
+/* Footer */
+footer {
+  background: var(--footer-color);
+  width: 100%;
+  margin-top: 30rem;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 3rem;
+}
+
+footer .content .download .heading {
+  margin-bottom: 2rem;
+}
+
+footer .content .download img {
+  background: var(--light-gray);
+  width: 50px;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+footer .content .footer-text {
+  max-width: 600px;
+}
+
+footer .content .footer-text .text {
+  margin-bottom: 3rem;
+}
+
+footer .content .footer-text .links a {
+  margin-right: 2rem;
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+footer .content .contact .heading {
+  margin-bottom: 3rem;
+}
+
+footer .content .contact .image img {
+  width: 25px;
+  margin-right: 3rem;
+}
