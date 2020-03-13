@@ -41,6 +41,10 @@
   font-size: 0.7rem;
 }
 
+.text-bold {
+  font-family: arial, sans-serif;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 0.7rem;
@@ -426,6 +430,94 @@ main .bottom tbody {
 
 main .bottom tbody tr:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 115, 229, 0.2);
+  cursor: pointer;
+}
+
+/* main for product */
+main .product-top-page {
+  padding: 2rem 4.5rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+main .product-top-page .product-first {
+  display: flex;
+  align-items: center;
+}
+
+main .product-top-page .product-first .back i {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+main .product-top-page .product-first .production-house img {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+main .product-top-page .product-first .divide-line {
+  margin: 0 1rem;
+  background: var(--light-gray);
+}
+
+main .product-top-page .product-second {
+  margin-top: 1rem;
+}
+
+main .product-top-page .product-third {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .product-top-page .product-fourth {
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .product-top-page table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+main .product-top-page table img {
+  width: 20px;
+  margin-right: 0.5rem;
+}
+
+main .product-top-page td {
+  text-align: left;
+  padding: 2rem 1rem;
+}
+
+main .product-top-page td .rush {
+  padding: 3px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--green-color);
+  margin-right: 0.4rem;
+}
+
+main .product-top-page td .rush i {
+  font-size: 0.3rem;
+}
+
+main .product-top-page table th {
+  text-align: left;
+  padding: 2rem 1rem;
+  font-family: arial, sans-serif;
+}
+
+main .product-top-page thead {
+  margin-bottom: 1rem;
+}
+
+main .product-top-page tbody {
+  margin: 1rem 0;
+  background: #fff;
 }
 
 /* Footer */
